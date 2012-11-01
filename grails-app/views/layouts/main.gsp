@@ -55,6 +55,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <g:javascript src="jquery-1.8.2.min.js" />
 <g:javascript src="bootstrap.min.js" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<g:javascript src="musashino.js" />
 
 </body>
 </html>
