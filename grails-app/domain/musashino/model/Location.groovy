@@ -1,5 +1,7 @@
 package musashino.model
 
+import groovy.json.JsonSlurper
+
 class Location {
 
   String name
@@ -24,9 +26,19 @@ class Location {
     return this.name
   }
 
-  static getLatLngFromGoogleMaps(String address) {
-    assert address != null
+  static final String GOOGLE_MAP_URL_PREFIX = "http://maps.google.com/maps/api/geocode/json?"
 
+  void setLatLngFromGoogleMaps() {
+    assert this.address != null
 
+    def url = GOOGLE_MAP_URL_PREFIX + "address=" + this.address + "&sensor=false"
+    def response = url.toURL().text
+    def json = new JsonSlurper().parseText(response)
+    if (!json['results'][0]) {
+      log.warn("Couldn't get the location info: " + this.address)
+      return
+    }
+    this.latitude = json['results'][0]['geometry']['location']['lat']
+    this.longitude = json['results'][0]['geometry']['location']['lng']
   }
 }
