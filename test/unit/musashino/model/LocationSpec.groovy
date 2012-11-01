@@ -36,4 +36,16 @@ class LocationSpec extends Specification {
       location.latitude == "35.67589350"
       location.longitude == "139.74486590"
   }
+
+  def "invalid address should be a validation error"() {
+    when:
+      def location = new Location()
+      location.name = "hogehoge"
+      location.address = "でたらめ住所"
+      def result = location.validate()
+    then:
+      result == false
+      location.errors.getFieldErrorCount("address") == 1
+      location.errors.getFieldError("address").code == "invalid"
+  }
 }

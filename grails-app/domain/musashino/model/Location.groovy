@@ -15,7 +15,11 @@ class Location {
 
   static constraints = {
     name(blank: false)
-    address(blank: false)
+    address(
+      blank: false,
+      validator: { val, obj ->
+        obj.setLatLngFromGoogleMaps() ? null : "invalid"
+      })
     latitude(nullable: true)
     longitude(nullable: true)
     dateCreated()
@@ -26,28 +30,20 @@ class Location {
     return this.name
   }
 
-  def beforeInsert() {
-    setLatLngFromGoogleMaps()
-  }
-
-  def beforeUpdate() {
-    setLatLngFromGoogleMaps()
-  }
-
   static final String GOOGLE_MAP_URL_PREFIX = "http://maps.google.com/maps/api/geocode/json?"
 
-  void setLatLngFromGoogleMaps() {
-    assert this.address != null
+  boolean setLatLngFromGoogleMaps() {
+    if (!this.address) return false
 
     log.info("Accessing to google map ...")
     def url = GOOGLE_MAP_URL_PREFIX + "address=" + this.address + "&sensor=false"
     def response = url.toURL().text
     def json = new JsonSlurper().parseText(response)
     if (!json['results'][0]) {
-      log.warn("Couldn't get the location info: " + this.address)
-      return
+      return false
     }
     this.latitude = json['results'][0]['geometry']['location']['lat']
     this.longitude = json['results'][0]['geometry']['location']['lng']
+    return true
   }
 }
