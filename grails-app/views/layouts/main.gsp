@@ -35,10 +35,10 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="#">Musashino</a>
+			<a class="brand" href="<g:createLink controller="home"/>">Musashino</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li class="active"><g:link controller="home">Home</g:link></li>
 					<li><a href="#about">About</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
