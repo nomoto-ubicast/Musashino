@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b528419-609b-4a9f-a795-feeafc9e0065" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/musashino.js" />
+    <list default="true" id="2b528419-609b-4a9f-a795-feeafc9e0065" name="Default" comment="added musashino.js">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/musashino/controller/HomeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/musashino/controller/HomeController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/home/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/musashino.js" afterPath="$PROJECT_DIR$/web-app/js/musashino.js" />
     </list>
     <ignored path="musashino.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,25 +68,16 @@
       <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="79" selection-start="400" selection-end="400" vertical-scroll-proportion="-4.1458335">
+            <state line="52" column="69" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-19.1875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="31" selection-start="1893" selection-end="1905" vertical-scroll-proportion="-19.52">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_textField.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/shared/_textField.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="-5.9375">
+            <state line="9" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.2753623">
               <folding />
             </state>
           </provider>
@@ -93,16 +86,16 @@
       <file leaf-file-name="HomeController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/musashino/controller/HomeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="17" selection-start="8" selection-end="17" vertical-scroll-proportion="-0.0">
+            <state line="7" column="63" selection-start="166" selection-end="166" vertical-scroll-proportion="-5.7826085">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="musashino.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="musashino.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/js/musashino.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="353" selection-end="353" vertical-scroll-proportion="0.44117647">
+            <state line="9" column="48" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,8 +107,19 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="14" selection-start="63" selection-end="71" vertical-scroll-proportion="-0.6888889">
+            <state line="10" column="18" selection-start="134" selection-end="143" vertical-scroll-proportion="-3.2222223">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationSpec.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/musashino/model/LocationSpec.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="42" selection-start="974" selection-end="974" vertical-scroll-proportion="-10.73913">
+              <folding>
+                <element signature="e#25#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,17 +146,17 @@
         <option value="$PROJECT_DIR$/grails-app/domain/musashino/model/Location.groovy" />
         <option value="$PROJECT_DIR$/test/unit/musashino/model/LocationSpec.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/shared/_textField.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/musashino/controller/HomeController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/shared/_textField.gsp" />
         <option value="$PROJECT_DIR$/web-app/js/musashino.js" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="50" />
-    <option name="y" value="38" />
+    <option name="x" value="32" />
+    <option name="y" value="32" />
     <option name="width" value="1351" />
     <option name="height" value="794" />
   </component>
@@ -702,11 +706,15 @@
       <created>1351760580880</created>
       <updated>1351760580881</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added musashino.js">
+      <created>1351761001082</created>
+      <updated>1351761001083</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="38" width="1351" height="794" extended-state="0" />
+    <frame x="32" y="32" width="1351" height="794" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -730,8 +738,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980843" sideWeight="0.6166419" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3833581" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980843" sideWeight="0.653789" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.346211" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -775,7 +783,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added logic to register a location with validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added musashino.js" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -800,6 +808,7 @@
     <MESSAGE value="added a shared template for text input" />
     <MESSAGE value="added a test case to Location: &quot;invalid address should be a validation error&quot;" />
     <MESSAGE value="added logic to register a location with validation" />
+    <MESSAGE value="added musashino.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -872,12 +881,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/musashino/model/LocationSpec.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/shared/_textField.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.085072234">
-          <folding>
-            <element signature="e#25#51#0" expanded="true" />
-          </folding>
+        <state line="15" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="-5.9375">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -886,42 +893,44 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="63" selection-end="71" vertical-scroll-proportion="-0.6888889">
+        <state line="10" column="18" selection-start="134" selection-end="143" vertical-scroll-proportion="-3.2222223">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/shared/_textField.gsp">
+    <entry file="file://$PROJECT_DIR$/test/unit/musashino/model/LocationSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="-5.9375">
+        <state line="36" column="42" selection-start="974" selection-end="974" vertical-scroll-proportion="-10.73913">
+          <folding>
+            <element signature="e#25#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/musashino.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="48" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/musashino/controller/HomeController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="8" selection-end="17" vertical-scroll-proportion="-0.0">
+        <state line="7" column="63" selection-start="166" selection-end="166" vertical-scroll-proportion="-5.7826085">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="79" selection-start="400" selection-end="400" vertical-scroll-proportion="-4.1458335">
+        <state line="52" column="69" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-19.1875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="1893" selection-end="1905" vertical-scroll-proportion="-19.52">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/js/musashino.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="353" selection-end="353" vertical-scroll-proportion="0.44117647">
+        <state line="9" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.2753623">
           <folding />
         </state>
       </provider>

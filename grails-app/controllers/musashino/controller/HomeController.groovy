@@ -5,7 +5,7 @@ import musashino.model.Location
 class HomeController {
 
   def index() {
-    log.info("home/index ...")
+    [locations: Location.list(sort: "lastUpdated", order: "desc")]
   }
 
   def create() {

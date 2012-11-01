@@ -13,9 +13,12 @@
 	<style>
 		body {
 			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+			padding-bottom: 30px;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="<g:resource dir="css" file="bootstrap-responsive.min.css"/>"/>
+
+	<g:javascript src="jquery-1.8.2.min.js" />
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -53,7 +56,6 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<g:javascript src="jquery-1.8.2.min.js" />
 <g:javascript src="bootstrap.min.js" />
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <g:javascript src="musashino.js" />

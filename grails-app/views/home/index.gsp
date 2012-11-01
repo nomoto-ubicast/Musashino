@@ -4,6 +4,22 @@
 <head>
 	<meta name="layout" content="main"/>
 	<style>
+		div.locations {
+			margin-left: 50px;
+		}
+		div.locations div.location {
+			margin-top: 20px;
+		}
+		div.locations div.location-name {
+			font-weight: bold;
+			font-size: larger;
+			text-decoration: underline;
+		}
+		div.locations div.location-map {
+			margin-top: 10px;
+			width: 700px;
+			height: 300px;
+		}
 	</style>
 </head>
 <body>
@@ -28,6 +44,30 @@
 	</div>
 </g:form>
 </p>
+
+<script type="text/javascript">
+//<![CDATA[
+	jQuery(function() {
+		jQuery("div.location-map").each(function() {
+			var latitude = jQuery(this).children("span.latitude").text();
+			var longitude = jQuery(this).children("span.longitude").text();
+			musashino.createGoogleMap(this, latitude, longitude);
+		});
+	});
+//]]>
+</script>
+<div class="locations">
+<g:each in="${locations}" var="location">
+	<div class="location">
+		<div class="location-name">${location.name}</div>
+		<div class="location-address">${location.address}</div>
+		<div class="location-map">
+			<span class="latitude" style="display: none;">${location.latitude}</span>
+			<span class="longitude" style="display: none;">${location.longitude}</span>
+		</div>
+	</div>
+</g:each>
+</div>
 
 </body>
 </html>
