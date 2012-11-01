@@ -2,6 +2,7 @@
 	<label class="control-label" for="${id}">${label}</label>
 	<div class="controls">
 		<g:textField name="${name}" placeholder="${label}" id="${id}"
+			value="${fieldValue(bean: model, field: name)}"
 			class="${size ? "input-" + size : ""}"/>
 		<g:hasErrors bean="${model}" field="${name}">
 			<span class="help-inline">
