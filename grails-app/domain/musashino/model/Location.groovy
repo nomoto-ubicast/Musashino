@@ -23,4 +23,10 @@ class Location {
   String toString() {
     return this.name
   }
+
+  static getLatLngFromGoogleMaps(String address) {
+    assert address != null
+
+
+  }
 }
