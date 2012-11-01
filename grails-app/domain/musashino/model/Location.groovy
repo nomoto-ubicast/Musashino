@@ -26,11 +26,20 @@ class Location {
     return this.name
   }
 
+  def beforeInsert() {
+    setLatLngFromGoogleMaps()
+  }
+
+  def beforeUpdate() {
+    setLatLngFromGoogleMaps()
+  }
+
   static final String GOOGLE_MAP_URL_PREFIX = "http://maps.google.com/maps/api/geocode/json?"
 
   void setLatLngFromGoogleMaps() {
     assert this.address != null
 
+    log.info("Accessing to google map ...")
     def url = GOOGLE_MAP_URL_PREFIX + "address=" + this.address + "&sensor=false"
     def response = url.toURL().text
     def json = new JsonSlurper().parseText(response)

@@ -25,4 +25,15 @@ class LocationSpec extends Specification {
       location.latitude == "35.67589350"
       location.longitude == "139.74486590"
   }
+
+  def "the latitude and longitude should be set before insert/update"() {
+    when:
+      def location = new Location()
+      location.name = "国会議事堂"
+      location.address = "東京都千代田区永田町１丁目７−１"
+      location.save(flush: true)
+    then:
+      location.latitude == "35.67589350"
+      location.longitude == "139.74486590"
+  }
 }
