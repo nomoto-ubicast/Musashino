@@ -55,7 +55,7 @@
 	<div class="notes">
 		<g:each in="${location.notes}" var="note">
 			<div class="note-content well well-small" style="position: relative;">
-				${note.markdownToHtml()}
+				<%=note.markdownToHtml()%>
 				<span class="last-updated">
 					${note.lastUpdated.format("yyyy-MM-dd HH:mm:ss")}
 				</span>

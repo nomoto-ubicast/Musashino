@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2b528419-609b-4a9f-a795-feeafc9e0065" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/musashino/model/Location.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/musashino/model/Location.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/location/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/location/show.gsp" />
     </list>
     <ignored path="musashino.iws" />
@@ -75,13 +74,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Location.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Location.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/musashino/model/Location.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.37437603">
+            <state line="20" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="6.4888887">
               <folding />
             </state>
           </provider>
@@ -107,13 +106,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/location/show.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="23" selection-start="323" selection-end="323" vertical-scroll-proportion="-6.7291665">
+            <state line="57" column="24" selection-start="1493" selection-end="1501" vertical-scroll-proportion="0.45986623">
               <folding>
-                <marker date="1351840821000" expanded="true" signature="546:563" placeholder="{...}" />
-                <marker date="1351840821000" expanded="true" signature="802:830" placeholder="{...}" />
+                <marker date="1351841900000" expanded="true" signature="548:565" placeholder="{...}" />
+                <marker date="1351841900000" expanded="true" signature="804:832" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -156,9 +155,9 @@
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/location/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/musashino/model/Note.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/musashino/model/Location.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/location/show.gsp" />
       </list>
     </option>
   </component>
@@ -864,7 +863,11 @@
       <created>1351840564590</created>
       <updated>1351840564590</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added sorting and last-update-timestamp to the note list">
+      <created>1351841408627</created>
+      <updated>1351841408627</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -938,7 +941,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added note list to location/show" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sorting and last-update-timestamp to the note list" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -951,7 +954,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="changed the root index to home/index" />
     <MESSAGE value="introduced main layout" />
     <MESSAGE value="fixed the home link using gsp tags" />
     <MESSAGE value="created a model: musashino.model.Location" />
@@ -976,6 +978,7 @@
     <MESSAGE value="added a markdown parser" />
     <MESSAGE value="added an action: musashino.controller.LocationController#addNote" />
     <MESSAGE value="added note list to location/show" />
+    <MESSAGE value="added sorting and last-update-timestamp to the note list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -985,13 +988,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web-app/js/musashino.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.20588236">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/errors.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1069,16 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/location/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="323" selection-end="323" vertical-scroll-proportion="-6.7291665">
-          <folding>
-            <marker date="1351840821000" expanded="true" signature="546:563" placeholder="{...}" />
-            <marker date="1351840821000" expanded="true" signature="802:830" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/musashino/model/NoteSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="-13.217391">
@@ -1103,8 +1089,25 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.37437603">
+        <state line="20" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="6.4888887">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1625" selection-end="1660" vertical-scroll-proportion="0.43535188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/location/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="24" selection-start="1493" selection-end="1501" vertical-scroll-proportion="0.45986623">
+          <folding>
+            <marker date="1351841900000" expanded="true" signature="548:565" placeholder="{...}" />
+            <marker date="1351841900000" expanded="true" signature="804:832" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
