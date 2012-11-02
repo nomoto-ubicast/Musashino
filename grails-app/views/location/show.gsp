@@ -15,7 +15,7 @@
 	span.last-updated {
 		position: absolute;
 		right: 5px;
-		bottom: 5px;
+		bottom: 0px;
 		color: gray;
 		font-size: smaller;
 	}

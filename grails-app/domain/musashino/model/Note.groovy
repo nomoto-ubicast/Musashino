@@ -1,6 +1,7 @@
 package musashino.model
 
 import org.pegdown.PegDownProcessor
+import org.apache.commons.lang.StringEscapeUtils
 
 class Note {
 
@@ -18,7 +19,8 @@ class Note {
 
   String markdownToHtml() {
     return this.content ?
-      new PegDownProcessor().markdownToHtml(this.content) :
+      new PegDownProcessor().markdownToHtml(
+        StringEscapeUtils.escapeHtml(this.content)) :
       this.content;
   }
 }
