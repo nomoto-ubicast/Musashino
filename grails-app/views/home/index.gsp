@@ -69,7 +69,7 @@
 <g:each in="${locations}" var="location">
 	<div class="location">
 		<div class="location-name">
-			${location.name}
+			<g:link controller="location" action="show" params="[id: location.id]">${location.name}</g:link>
 			<a href="#" onclick="deleteLocation(${location.id}, this); return false;">
 			<i class="icon-remove" style="margin-left: 5px; vertical-align: baseline;"></i></a>
 		</div>
