@@ -1,5 +1,7 @@
 package musashino.model
 
+import org.pegdown.PegDownProcessor
+
 class Note {
 
   static belongsTo = [location: Location]
@@ -12,5 +14,11 @@ class Note {
     content(blank: false)
     dateCreated()
     lastUpdated()
+  }
+
+  String markdownToHtml() {
+    return this.content ?
+      new PegDownProcessor().markdownToHtml(this.content) :
+      this.content;
   }
 }

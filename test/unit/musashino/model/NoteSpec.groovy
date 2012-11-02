@@ -14,4 +14,13 @@ class NoteSpec extends Specification {
     note.hasErrors()
     note.errors.getFieldErrorCount("content") == 1
   }
+
+  def "get the markdown content as html"() {
+    when:
+    def note = new Note()
+    note.content = "this is **important**"
+    def html = note.markdownToHtml()
+    then:
+    html == "<p>this is <strong>important</strong></p>"
+  }
 }
