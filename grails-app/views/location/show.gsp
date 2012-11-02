@@ -3,9 +3,16 @@
 <html lang="ja">
 <head>
 	<meta name="layout" content="main"/>
+	<style>
+	div.location {
+		margin-left: 50px;
+	}
+	</style>
 </head>
+
 <body>
-${location.name}
+
+<g:render template="/shared/location" model="[location: location]"/>
 
 </body>
 </html>

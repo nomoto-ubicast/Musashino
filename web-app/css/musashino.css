@@ -1,0 +1,13 @@
+div.location div.location-name {
+  font-weight: bold;
+  font-size: larger;
+  text-decoration: underline;
+}
+
+div.location div.location-map {
+  margin-top: 10px;
+  width: 700px;
+  height: 300px;
+}
+
+
