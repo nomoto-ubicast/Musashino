@@ -5,6 +5,7 @@
 	<meta name="layout" content="main"/>
 	<style>
 	div.locations {
+		margin-top: 30px;
 		margin-left: 50px;
 	}
 

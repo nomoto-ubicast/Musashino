@@ -7,6 +7,10 @@
 	div.content {
 		margin-left: 50px;
 	}
+
+	div.note-content {
+		width: 685px;
+	}
 	</style>
 </head>
 
@@ -39,6 +43,14 @@
 			</div>
 		</div>
 	</g:form>
+
+	<div class="notes">
+		<g:each in="${location.notes}" var="note">
+			<div class="note-content well well-small">
+				${note.markdownToHtml()}
+			</div>
+		</g:each>
+	</div>
 </div>
 
 </body>
