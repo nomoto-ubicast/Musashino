@@ -13,6 +13,8 @@ class Location {
   Date dateCreated
   Date lastUpdated
 
+  static hasMany = [notes: Note]
+
   static constraints = {
     name(blank: false)
     address(

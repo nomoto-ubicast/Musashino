@@ -16,7 +16,7 @@ class HomeController {
     withForm {
       def location = new Location(params)
       if (location.save()) {
-        flash.message = "Registered - " + location.name
+        flash.message = location.name + " has been registered"
         redirect(action: 'index')
       }
       else {
