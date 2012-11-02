@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2b528419-609b-4a9f-a795-feeafc9e0065" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/location/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/location/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/home/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/shared/_location.gsp" afterPath="$PROJECT_DIR$/grails-app/views/shared/_location.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/musashino.css" afterPath="$PROJECT_DIR$/web-app/css/musashino.css" />
     </list>
     <ignored path="musashino.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,14 +107,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/location/show.gsp">
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="92" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.6822742">
-              <folding>
-                <marker date="1351843632000" expanded="true" signature="617:634" placeholder="{...}" />
-                <marker date="1351843632000" expanded="true" signature="873:901" placeholder="{...}" />
-              </folding>
+            <state line="8" column="22" selection-start="194" selection-end="194" vertical-scroll-proportion="8.395833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="musashino.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-app/css/musashino.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="2" selection-start="268" selection-end="268" vertical-scroll-proportion="0.39583334">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,7 +128,7 @@
       <file leaf-file-name="_location.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/shared/_location.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="28" selection-start="411" selection-end="411" vertical-scroll-proportion="-3.9583333">
+            <state line="5" column="28" selection-start="320" selection-end="320" vertical-scroll-proportion="-1.9791666">
               <folding />
             </state>
           </provider>
@@ -143,19 +150,19 @@
         <option value="$PROJECT_DIR$/grails-app/i18n/messages_ja.properties" />
         <option value="$PROJECT_DIR$/grails-app/i18n/messages.properties" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/shared/_location.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/musashino.css" />
         <option value="$PROJECT_DIR$/web-app/js/musashino.js" />
         <option value="$PROJECT_DIR$/grails-app/controllers/musashino/controller/HomeController.groovy" />
         <option value="$PROJECT_DIR$/test/unit/musashino/model/NoteSpac.groovy" />
         <option value="$PROJECT_DIR$/test/unit/musashino/model/NoteSpec.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/musashino/model/Location.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/musashino/model/Note.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/location/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/shared/_location.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/musashino.css" />
       </list>
     </option>
   </component>
@@ -873,7 +880,11 @@
       <created>1351843191951</created>
       <updated>1351843191951</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added a feature to delete a note">
+      <created>1351843747553</created>
+      <updated>1351843747553</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -947,7 +958,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the XSS problem in notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a feature to delete a note" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -960,7 +971,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="created a model: musashino.model.Location" />
     <MESSAGE value="testing Google Map API" />
     <MESSAGE value="added a method: musashino.model.Location.setLatLngFromGoogleMaps" />
     <MESSAGE value="added a spec to Location: &quot;the latitude and longitude should be set before insert/update&quot;" />
@@ -985,6 +995,7 @@
     <MESSAGE value="added sorting and last-update-timestamp to the note list" />
     <MESSAGE value="updated the note display to show markdown html correctly (still it involves XSS issues)" />
     <MESSAGE value="fixed the XSS problem in notes" />
+    <MESSAGE value="added a feature to delete a note" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1020,13 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/musashino.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.38235295">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/musashino/model/NoteSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="-13.217391">
@@ -1055,13 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/shared/_textField.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="320" selection-end="529" vertical-scroll-proportion="0.38127092">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/musashino/model/Location.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -1079,13 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/musashino/controller/HomeController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="13" selection-start="661" selection-end="736" vertical-scroll-proportion="-19.652174">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="27" selection-start="738" selection-end="738" vertical-scroll-proportion="-13.869565">
@@ -1095,27 +1085,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/shared/_location.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/location/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="411" selection-end="411" vertical-scroll-proportion="-3.9583333">
+        <state line="64" column="80" selection-start="1654" selection-end="1654" vertical-scroll-proportion="2.033445">
+          <folding>
+            <marker date="1351843746000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1351843746000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/musashino/controller/HomeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="13" selection-start="661" selection-end="736" vertical-scroll-proportion="-19.652174">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/shared/_textField.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="320" selection-end="529" vertical-scroll-proportion="0.38127092">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="839" selection-end="1241" vertical-scroll-proportion="0.4937833">
+        <state line="8" column="22" selection-start="194" selection-end="194" vertical-scroll-proportion="8.395833">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/location/show.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/shared/_location.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="92" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.6822742">
-          <folding>
-            <marker date="1351843632000" expanded="true" signature="617:634" placeholder="{...}" />
-            <marker date="1351843632000" expanded="true" signature="873:901" placeholder="{...}" />
-          </folding>
+        <state line="5" column="28" selection-start="320" selection-end="320" vertical-scroll-proportion="-1.9791666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/musashino.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="2" selection-start="268" selection-end="268" vertical-scroll-proportion="0.39583334">
+          <folding />
         </state>
       </provider>
     </entry>

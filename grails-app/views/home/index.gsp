@@ -10,7 +10,7 @@
 	}
 
 	div.locations div.location {
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 	</style>
 </head>

@@ -1,7 +1,17 @@
-div.location div.location-name {
+div.location div.location-name a {
   font-weight: bold;
   font-size: larger;
   text-decoration: underline;
+}
+
+div.location div.location-name span.note-count {
+  margin-left: 10px;
+  color: gray;
+}
+
+div.location div.location-name i.icon-remove {
+  margin-left: 10px;
+  vertical-align: baseline;
 }
 
 div.location div.location-map {
