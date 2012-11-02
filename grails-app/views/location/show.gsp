@@ -17,10 +17,18 @@
 
 	<g:form useToken="true" name="note" url="[controller: 'location', action: 'addNote']"
 					style="margin-top: 20px;">
-		<div class="control-group">
+		<g:hiddenField name="location.id" value="${location.id}"/>
+		<div class="control-group ${hasErrors(bean: note, field: 'content', 'error')}">
 			<div class="controls">
 				<g:textArea name="content" rows="1" cols="40"
 										style="width: 690px; height: 100px;"/>
+				<g:hasErrors bean="${note}" field="content">
+					<span class="help-block">
+						<g:eachError bean="${note}" field="content">
+							<g:message error="${it}"/><br/>
+						</g:eachError>
+					</span>
+				</g:hasErrors>
 				<br/>
 				<button type="submit" class="btn btn-primary">Add a note</button>
 				<span class="help-inline">

@@ -52,6 +52,12 @@
 </div>
 
 <div class="container">
+	<g:if test="${flash.message}">
+		<div class="alert">
+			<button type="button" class="close" data-dismiss="alert">×</button>
+			${flash.message}
+		</div>
+	</g:if>
 	<g:layoutBody/>
 </div> <!-- /container -->
 
