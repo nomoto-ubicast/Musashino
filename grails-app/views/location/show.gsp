@@ -19,6 +19,12 @@
 		color: gray;
 		font-size: smaller;
 	}
+
+	a.remove-note {
+		position: absolute;
+		right: 5px;
+		top: 3px;
+	}
 	</style>
 </head>
 
@@ -52,6 +58,19 @@
 		</div>
 	</g:form>
 
+	<script type="text/javascript">
+		//<![CDATA[
+		function deleteNote(id, button) {
+			if (!window.confirm("Are you sure you want to delete this note?")) return false;
+			jQuery.get("<g:createLink controller="location" action="deleteNote"/>", {id:id});
+			var noteDiv = jQuery(button).closest("div.note-content");
+			noteDiv.fadeOut("slow", function () {
+				noteDiv.remove();
+			});
+		}
+		//]]>
+	</script>
+
 	<div class="notes">
 		<g:each in="${location.notes}" var="note">
 			<div class="note-content well well-small" style="position: relative;">
@@ -59,6 +78,8 @@
 				<span class="last-updated">
 					${note.lastUpdated.format("yyyy-MM-dd HH:mm:ss")}
 				</span>
+				<a class="remove-note" href="#" onclick="deleteNote(${note.id}, this);
+				return false;"><i class="icon-remove"></i></a>
 			</div>
 		</g:each>
 	</div>

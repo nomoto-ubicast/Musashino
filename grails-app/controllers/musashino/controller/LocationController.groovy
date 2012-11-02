@@ -31,4 +31,10 @@ class LocationController {
       response.status = 405
     }
   }
+
+  def deleteNote() {
+    def id = params["id"];
+    if (id) Note.get(id).delete();
+    render ""
+  }
 }
