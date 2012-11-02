@@ -5,7 +5,11 @@ import musashino.model.Location
 class HomeController {
 
   def index() {
-    [locations: Location.list(sort: "lastUpdated", order: "desc")]
+    [locations: locations()]
+  }
+
+  private static def locations() {
+    return Location.list(sort: "lastUpdated", order: "desc")
   }
 
   def create() {
@@ -16,7 +20,10 @@ class HomeController {
         redirect(action: 'index')
       }
       else {
-        render(view: 'index', model: [location: location])
+        render(view: 'index', model: [
+          location: location,
+          locations: locations()
+        ])
       }
     }.invalidToken {
       response.status = 405
