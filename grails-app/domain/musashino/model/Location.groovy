@@ -35,13 +35,19 @@ class Location {
   boolean setLatLngFromGoogleMaps() {
     if (!this.address) return false
 
-    log.info("Accessing to google map ...")
-    def url = GOOGLE_MAP_URL_PREFIX + "address=" + this.address + "&sensor=false"
+    log.info("accessing to google map ...")
+    def url = GOOGLE_MAP_URL_PREFIX + "address=" +
+      URLEncoder.encode(this.address, "UTF-8") + "&sensor=false"
+    log.info(url)
+
     def response = url.toURL().text
+    log.debug(response)
+
     def json = new JsonSlurper().parseText(response)
     if (!json['results'][0]) {
       return false
     }
+
     this.latitude = json['results'][0]['geometry']['location']['lat']
     this.longitude = json['results'][0]['geometry']['location']['lng']
     return true
