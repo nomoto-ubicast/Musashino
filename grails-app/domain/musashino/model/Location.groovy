@@ -40,7 +40,7 @@ class Location {
     log.info("accessing to google map ...")
     def url = GOOGLE_MAP_URL_PREFIX + "address=" +
       URLEncoder.encode(this.address, "UTF-8") + "&sensor=false"
-    log.info(url)
+    log.debug(url)
 
     def response = url.toURL().text
     log.debug(response)
