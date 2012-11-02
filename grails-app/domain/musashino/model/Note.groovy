@@ -12,7 +12,7 @@ class Note {
   Date lastUpdated
 
   static constraints = {
-    content(blank: false)
+    content(blank: false, size: 1..1000)
     dateCreated()
     lastUpdated()
   }

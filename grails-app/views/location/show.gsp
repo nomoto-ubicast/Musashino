@@ -8,10 +8,6 @@
 		margin-left: 50px;
 	}
 
-	div.note-content {
-		width: 685px;
-	}
-
 	span.last-updated {
 		position: absolute;
 		right: 5px;

@@ -47,6 +47,12 @@
 <div class="locations">
 	<g:each in="${locations}" var="location">
 		<g:render template="/shared/location" model="[location: location]"/>
+		<g:if test="${location.notes.size() > 0}">
+			<div class="note-content well well-small" style="margin-top: 10px;">
+				<strong>Last Update</strong>:<br/>
+				<%=location.notes.first().markdownToHtml()%>
+			</div>
+		</g:if>
 	</g:each>
 </div>
 
