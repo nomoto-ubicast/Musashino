@@ -16,14 +16,18 @@ class LocationController {
       def locationId = params["location.id"]
       if (!locationId) redirect(controller: "home")
 
+      def location = Location.get(locationId)
+
       def note = new Note(params)
       if (note.save()) {
+        location.lastUpdated = new Date()
+        location.save()
         flash.message = "A note has been added"
         redirect(action: 'show', params: [id: locationId])
       }
       else {
         render(view: 'show', model: [
-          location: Location.get(locationId),
+          location: location,
           note: note
         ])
       }

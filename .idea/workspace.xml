@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b528419-609b-4a9f-a795-feeafc9e0065" name="Default" comment="added the last update of the notes the location list in the home page">
+    <list default="true" id="2b528419-609b-4a9f-a795-feeafc9e0065" name="Default" comment="updated the production data source">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" />
     </list>
     <ignored path="musashino.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,11 +62,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataSource.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <file leaf-file-name="LocationController.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="12" selection-start="633" selection-end="643" vertical-scroll-proportion="0.64705884">
-              <folding />
+            <state line="13" column="8" selection-start="254" selection-end="261" vertical-scroll-proportion="0.15248796">
+              <folding>
+                <element signature="e#30#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,13 +95,13 @@
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/musashino/model/Location.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/shared/_location.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/musashino.css" />
         <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/musashino/model/Note.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/location/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy" />
       </list>
     </option>
   </component>
@@ -741,7 +743,11 @@
       <created>1351845708306</created>
       <updated>1351845708307</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="updated the production data source">
+      <created>1351849498003</created>
+      <updated>1351849498004</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -815,7 +821,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the last update of the notes the location list in the home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the production data source" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -828,7 +834,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="added a spec to Location: &quot;the latitude and longitude should be set before insert/update&quot;" />
     <MESSAGE value="added a shared template for text input" />
     <MESSAGE value="added a test case to Location: &quot;invalid address should be a validation error&quot;" />
     <MESSAGE value="added logic to register a location with validation" />
@@ -853,6 +858,7 @@
     <MESSAGE value="added a feature to delete a note" />
     <MESSAGE value="added note count to the location list in the home page" />
     <MESSAGE value="added the last update of the notes the location list in the home page" />
+    <MESSAGE value="updated the production data source" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -973,19 +979,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="117" selection-end="117" vertical-scroll-proportion="0.14606741">
-          <folding>
-            <element signature="e#30#61#0" expanded="true" />
-          </folding>
+        <state line="22" column="61" selection-start="620" selection-end="620" vertical-scroll-proportion="0.5588235">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/musashino/controller/LocationController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="633" selection-end="643" vertical-scroll-proportion="0.64705884">
-          <folding />
+        <state line="13" column="8" selection-start="254" selection-end="261" vertical-scroll-proportion="0.15248796">
+          <folding>
+            <element signature="e#30#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
