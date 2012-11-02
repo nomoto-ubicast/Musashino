@@ -15,6 +15,10 @@ class Location {
 
   static hasMany = [notes: Note]
 
+  static mapping = {
+    notes sort: "lastUpdated", order: "desc"
+  }
+
   static constraints = {
     name(blank: false)
     address(
