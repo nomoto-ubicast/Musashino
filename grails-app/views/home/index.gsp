@@ -54,12 +54,25 @@
 			musashino.createGoogleMap(this, latitude, longitude);
 		});
 	});
+
+	function deleteLocation(id, button) {
+		if (!window.confirm("Are you sure you want to delete this location?")) return false;
+		jQuery.get("<g:createLink controller="home" action="delete"/>", {id: id});
+		var locationDiv = jQuery(button).closest("div.location");
+		locationDiv.fadeOut("slow", function() {
+			locationDiv.remove();
+		});
+	}
 //]]>
 </script>
 <div class="locations">
 <g:each in="${locations}" var="location">
 	<div class="location">
-		<div class="location-name">${location.name}</div>
+		<div class="location-name">
+			${location.name}
+			<a href="#" onclick="deleteLocation(${location.id}, this); return false;">
+			<i class="icon-remove" style="margin-left: 5px; vertical-align: baseline;"></i></a>
+		</div>
 		<div class="location-address">${location.address}</div>
 		<div class="location-map">
 			<span class="latitude" style="display: none;">${location.latitude}</span>

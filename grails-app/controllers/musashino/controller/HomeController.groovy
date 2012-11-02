@@ -29,4 +29,10 @@ class HomeController {
       response.status = 405
     }
   }
+
+  def delete() {
+    def id = params["id"];
+    if (id) Location.get(id).delete();
+    render ""
+  }
 }
