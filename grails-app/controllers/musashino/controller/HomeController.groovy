@@ -8,6 +8,9 @@ class HomeController {
     [locations: locations()]
   }
 
+  def about() {
+  }
+
   private static def locations() {
     return Location.list(sort: "lastUpdated", order: "desc")
   }

@@ -44,7 +44,7 @@
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="active"><g:link controller="home">Home</g:link></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="<g:createLink controller="home" action="about"/>">About</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
